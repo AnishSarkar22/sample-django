@@ -1,15 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Template is working</title>
+    <title>Text Utils</title>
 </head>
 <body>
-<h1>Welcome to the text analyazer. Enter your text below</h1>
-<form action='/removepunc' method='get'>
+<h1>Welcome to the text analyzer. Enter your text below</h1>
+<form action='/analyze' method='get'>
     <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
-    
+    <input type='checkbox' name='removepunc' value='on'> Remove Punctuation <br>
+    <input type='checkbox' name='fullcaps' value='on'> UPPERCASE <br>
+    <input type='checkbox' name='newlineremover' value='on'> New Line Remover <br>
+    <input type='checkbox' name='extraspaceremover' value='on'> Extra Space Remover <br>
     <button type='submit'> Analyze Text</button>
 
 </form>
